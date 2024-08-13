@@ -150,7 +150,7 @@ const findOrderById = async (req, res) => {
       res.json(order);
     } else {
       res.status(404);
-      throw new Error("Order not found");
+      throw new Error("Order not found ..");
     }
   } catch (error) {
     res.status(500).json({ error: error.message });
